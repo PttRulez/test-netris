@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  padding: 50px 0px 0px 20px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  display: flex;
+}
+
+video {
+  z-index: 1;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2147483647;
+}
+
+.timestamps {
+  width: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.timestamps span {
+  display: flex;
+  cursor: pointer;
+  color: #7633fa;
+  align-items: center;
+  justify-content: flex-start;
+}
